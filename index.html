@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madam Ji's Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Page 1 -->
+        <div class="page" id="page-1">
+            <h1>A very Happy Birthday to you, madam ji!</h1>
+            <p>I'm really grateful to have you in my life, and goodness, you and your smile are taking all my heart away slowly.</p>
+            <p><strong>Badhe aage?</strong></p>
+            <button onclick="nextPage('yes')">Yes</button>
+            <button onclick="nextPage('no')">No</button>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page hidden" id="page-2">
+            <p id="message-2"></p>
+            <p><strong>Lights?</strong></p>
+            <button onclick="toggleLights()">Yes</button>
+            <button onclick="toggleLights()">No</button>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page hidden" id="page-3">
+            <p><strong>Music?</strong></p>
+            <button onclick="playMusic()">Yes</button>
+            <button onclick="playMusic()">No</button>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page hidden" id="page-4">
+            <p><strong>Bhook lagi hai ab, cake kaate?</strong></p>
+            <button onclick="cutCake()">Yes</button>
+            <button onclick="cutCake()">No</button>
+        </div>
+
+        <audio id="music" src=""></audio>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
